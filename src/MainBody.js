@@ -74,7 +74,7 @@ function MainBody() {
             <img alt="frontImage" src={frontImage} className='w-full h-[300px] border rounded-xl mt-4'/>
             <div className='flex flex-col grid grid-cols-12 items-start justify-between w-full gap-4'>
                 <div className='relative mt-4 col-span-4 col-start-9 row-start-1 scroll-x-auto'>
-                <div className={`flex flex-col items-start fixed ${activeLink === "introduction"  ? 'top-auto' : 'top-0'}  left-1/2 lg:left-[1000px] md:left-[900px] xl:left-auto font-semibold opacity-80 ml-14 gap-y-4`}>
+                <div className={`flex flex-col items-start fixed ${activeLink === "introduction"  ? 'top-auto' : 'top-0'}  lg:left-[1000px] md:left-[900px] xl:left-auto font-semibold opacity-80 ml-14 gap-y-4`}>
                     {sections.map(section => (
                             <div key={section.id} className='flex items-center'>
                                 <div className={`w-0.5 h-4 mr-2 ${activeLink === section.id ? 'bg-black' : 'bg-gray-400'}`} />
